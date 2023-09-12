@@ -15,7 +15,8 @@ class ExtractorUtilsTest(unittest.TestCase):
         print("\nStep 2. MC simulation 的最大步数:\t", utils.get_max_step())
         
         print("\nStep 3. MC simulation 的所有接收步数", utils.get_exchanged_steps_lst())
-        
+
+        print(utils)        
 
 if __name__ == "__main__":
     unittest.main()

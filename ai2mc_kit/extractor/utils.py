@@ -6,6 +6,23 @@ class ExtractorUtils(object):
     def __init__(self, mc_folder:str):
         self.mc_folder = mc_folder
     
+        
+    def __str__(self):
+        return self.__repr__()
+    
+    
+    def __repr__(self):
+        steps_lst = self.get_steps_lst();
+        exchanged_steps_lst = self.get_exchanged_steps_lst()
+        
+        print("{0:-^50}".format("Monte Carlo Summary"))
+        print("\t1. {0:<20s} : {1:<4d}".format("Total Steps:", len(steps_lst)))
+        print("\t2. {0:<20s} : {1:<4d}".format("Exchanged Steps:", len(exchanged_steps_lst)))
+        print("\t3. {0:<20s} : {1:<4.3f}".format("Accept Ratio", len(exchanged_steps_lst)/len(steps_lst)))
+        print("{0:-^50}".format("--"))
+        return ""
+    
+    
     def get_steps_lst(self):
         '''
         Description
