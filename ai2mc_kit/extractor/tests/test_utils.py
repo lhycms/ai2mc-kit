@@ -12,10 +12,11 @@ class ExtractorUtilsTest(unittest.TestCase):
         utils = ExtractorUtils(mc_folder=mc_folder)
         print("Step 1. MC simulation 的所有步数:\n", utils.get_steps_lst())
         
-        print("\nStep 2. MC simulation 的最大步数:\t", utils.get_max_step())
+        print("\nStep 2. MC simulation 的最大步数:\n", utils.get_max_step())
         
-        print("\nStep 3. MC simulation 的所有接收步数", utils.get_exchanged_steps_lst())
+        print("\nStep 3. MC simulation 的所有接收步数:\n", utils.get_exchanged_steps_lst())
 
+        print("\nStep 4. MC summary:")
         print(utils)        
 
 if __name__ == "__main__":

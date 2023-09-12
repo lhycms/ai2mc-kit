@@ -3,6 +3,11 @@ from typing import List
 
 
 class ExtractorUtils(object):
+    '''
+    Description
+    -----------
+        1. Some utility to assist extractor
+    '''
     def __init__(self, mc_folder:str):
         self.mc_folder = mc_folder
     
