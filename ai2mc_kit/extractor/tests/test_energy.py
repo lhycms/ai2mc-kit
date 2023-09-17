@@ -11,6 +11,12 @@ class EnergyExtractorTest(unittest.TestCase):
         energy_extractor = EnergyExtractor(mc_folder=mc_folder)
         energys_lst = energy_extractor.execute(option="exchanged")
         print(energys_lst)
+    
+    
+    def test_vasp(self):
+        energy_extractor = EnergyExtractor(mc_folder=mc_folder, fmt="vasp")
+        energys_lst = energy_extractor.execute()
+        print(energys_lst)
 
 
 
